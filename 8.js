@@ -60,13 +60,13 @@ var myAtoi = function(str) {
   return result;
 };
 
-console.log(myAtoi('42'), parseInt('42'));
-console.log(myAtoi('   -42'), parseInt('   -42'));
-console.log(myAtoi('4193 with words'), parseInt('4193 with words'));
-console.log(myAtoi('words and 987'), parseInt('words and 987'));
-console.log(myAtoi('-91283472332'), parseInt('-91283472332'));
-console.log(myAtoi('+1') == 1, parseInt('+1'));
-console.log(myAtoi('+-1') == 0, parseInt('+-1'));
-console.log(myAtoi('-+1') == 0, parseInt('-+1'));
-console.log(myAtoi('   +0 123') == 0, parseInt('   +0 123'));
-console.log(myAtoi('0-1') == 0, parseInt('0-1'));
+// console.log(myAtoi('42'), parseInt('42'));
+// console.log(myAtoi('   -42'), parseInt('   -42'));
+// console.log(myAtoi('4193 with words'), parseInt('4193 with words'));
+// console.log(myAtoi('words and 987'), parseInt('words and 987'));
+// console.log(myAtoi('-91283472332'), parseInt('-91283472332'));
+// console.log(myAtoi('+1') == 1, parseInt('+1'));
+// console.log(myAtoi('+-1') == 0, parseInt('+-1'));
+// console.log(myAtoi('-+1') == 0, parseInt('-+1'));
+// console.log(myAtoi('   +0 123') == 0, parseInt('   +0 123'));
+// console.log(myAtoi('0-1') == 0, parseInt('0-1'));
