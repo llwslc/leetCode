@@ -36,42 +36,15 @@ var mergeTwoLists = function(l1, l2) {
   return dummy.next;
 };
 
-function ListNode(val) {
-  this.val = val;
-  this.next = null;
-}
+let { ListNode, fillList, printList } = require('./lib');
 
 let h1 = null;
 let hd1 = null;
 let h2 = null;
 let hd2 = null;
 
-let fillList = (arr, h) => {
-  let hd = null;
-  arr.forEach((_, i) => {
-    if (i == 0) {
-      h = new ListNode(_);
-      hd = h;
-    } else {
-      h.next = new ListNode(_);
-      h = h.next;
-    }
-  });
-  return hd;
-};
-
 hd1 = fillList([1, 2, 4], h1);
 hd2 = fillList([1, 3, 4], h2);
-
-let printList = hd => {
-  let list = [];
-  while (hd) {
-    list.push(hd.val);
-    hd = hd.next;
-  }
-  console.log(list);
-};
-
 console.log(printList(mergeTwoLists(hd1, hd2)));
 
 hd1 = fillList([2], h1);

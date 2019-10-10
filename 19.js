@@ -31,24 +31,13 @@ var removeNthFromEnd = function(head, n) {
   return dummy.next;
 };
 
-function ListNode(val) {
-  this.val = val;
-  this.next = null;
-}
+let { ListNode, fillList, printList } = require('./lib');
 
 let h = null;
 let hd = null;
-h = new ListNode(1);
-h.next = new ListNode(2);
-console.log(removeNthFromEnd(h, 2));
 
-h = new ListNode(1);
-hd = h;
-h.next = new ListNode(2);
-h = h.next;
-h.next = new ListNode(3);
-h = h.next;
-h.next = new ListNode(4);
-h = h.next;
-h.next = new ListNode(5);
-console.log(removeNthFromEnd(hd, 2));
+hd = fillList([1, 2], h);
+console.log(printList(removeNthFromEnd(hd, 2)));
+
+hd = fillList([1, 2, 3, 4, 5], h);
+console.log(printList(removeNthFromEnd(hd, 2)));
